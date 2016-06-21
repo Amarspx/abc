@@ -12,6 +12,9 @@
 <!-- Header Starts here  -->
 <header>
 <div class="container">
+<div class="logo">
+<a href="#"><img src="images/logo.png" width="" height="" title="" alt=""></a>
+</div>
 <div class="menu-icon">
 	<span></span>
 	<span></span>
@@ -31,24 +34,26 @@
 </header>
 
 <!-- Content start here -->
-<div class="content container slider">
+<div class="content container">
 <!-- Banner Section -->
-<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/slider1.jpg">
-    </li>
-    <li>
-      <img src="images/slider2.jpg" />
-    </li>
-    <li>
-      <img src="images/slider3.jpg" />
-    </li>
-    <li>
-      <img src="images/slider1.jpg" />
-    </li>
-  </ul>
-</div>
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/slider1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/slider2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/slider3.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/slider1.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
 	
 </div>
 
@@ -65,17 +70,13 @@
 </nav>
 
 </footer>
-<script type="text/javascript" href="js/jquery.flexslider.js"></script>
+<script src="js/jquery.flexslider.js"></script>
   <script type="text/javascript">
-
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
+    jQuery(window).load(function(){
+      jQuery('.flexslider').flexslider({
+        animation: "slide"
       });
     });
-  </script>	
+  </script>
 </body>
 </html>
